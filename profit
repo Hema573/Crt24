@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int p,r,t;
+        p=sc.nextInt();
+        r=sc.nextInt();
+        t=sc.nextInt();
+        float I=(p+r+t)/100;
+        float amount=I+p;
+        float discount=(2*I)/100;
+        float settlement=amount-discount;
+        System.out.printf("%.2f\n",I);
+        System.out.printf("%.2f\n",amount);
+        System.out.printf("%.2f\n",discount);
+        System.out.printf("%.2f\n",settlement);
+        
+    }
+}
