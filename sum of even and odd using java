@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int s1=0,s2=0;
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=s.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+             if(arr[i]%2!=0)
+               {
+        s1=s1+arr[i];
+                }
+             else
+              {
+                s2=s2+arr[i];
+              }
+        }
+        System.out.println(s1);
+        System.out.println(s2);
+    }
+}
